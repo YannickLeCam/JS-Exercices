@@ -1,4 +1,4 @@
-export let quotes = [
+let quotes = [
     {
         "id": 1,
         "author": "Albert Camus",
@@ -90,3 +90,5 @@ export let quotes = [
         "content": "Les souvenirs, c'est du regret cristallisé."
     }
 ];
+
+//export {quotes};
