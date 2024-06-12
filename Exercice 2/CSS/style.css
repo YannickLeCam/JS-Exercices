@@ -10,4 +10,19 @@
     justify-content: center;
     align-items: center;
     margin: 0;
+    transition: 1s;
+}
+
+.carreOnClick{
+    background-color: brown;
+    transform: rotate(360deg) scale(0.9);
+    transition: 2s;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
 }
