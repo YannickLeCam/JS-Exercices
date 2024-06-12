@@ -1,4 +1,4 @@
-const carres = document.getElementsByClassName("carre"); // c'est un tableau
+const carres = document.getElementsByClassName("carre"); // c'est un tableau qui a tout les élément avec la classe "carre"
 
 /**
  * Permet d'ajouter un event listener a tout les element de la classe carré

@@ -1,12 +1,14 @@
 const carre = document.getElementsByClassName("carre")[0]; // c'est un tableau
 console.log(carre)
 
-function affichageInfoBulle() {
-    let classes = carre
-}
+
+
+/**
+ * Ajoute un EventLitener sur clique et fait apparaitre une alerte avec le CSS qui lui propre en dur.
+ */
 carre.addEventListener("click", ()=>{
     let classes = carre.classList; //array
-    let style = carre.style.height;//
+    let style = carre.style.height;
     console.log(style);
     alert(`classe : ${classes}
         display: flex
