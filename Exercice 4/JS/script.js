@@ -9,7 +9,14 @@ function createNewSquare() {
     newSquare.style.height="60px";
     newSquare.style.width="60px";
     newSquare.style.backgroundColor=`rgb(${Math.random()*256},${Math.random()*256},${Math.random()*256})`;
-
+    newSquare.addEventListener("click", function() {
+        if (this.style.backgroundColor=="black") {
+            this.style.backgroundColor=oldBackground;
+        }else{
+            oldBackground = this.style.backgroundColor;
+            this.style.backgroundColor="black";
+        }
+    });
     return newSquare;
 }
 
