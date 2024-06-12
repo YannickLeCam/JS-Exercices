@@ -10,10 +10,13 @@ function createNewSquare() {
     newSquare.style.width="60px";
     newSquare.style.backgroundColor=`rgb(${Math.random()*256},${Math.random()*256},${Math.random()*256})`;
     newSquare.addEventListener("click", function() {
+        /**
+         * Si j'avais pas instancié les couleurs directement sur l'objet il aurait été plus pratique (et propre) de le faire via un add class et un remove
+         */
         if (this.style.backgroundColor=="black") {
-            this.style.backgroundColor=oldBackground;
+            this.style.backgroundColor=this.style.color;
         }else{
-            oldBackground = this.style.backgroundColor;
+            this.style.color = this.style.backgroundColor;
             this.style.backgroundColor="black";
         }
     });
